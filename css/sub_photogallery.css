@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* 배너 */
+
+.banner {
+	position : relative;
+	width : 100%;
+	height : 400px;
+	background : url('../images/wrapping/banner.jpg') no-repeat;
+	background-size : cover;	
+}
+
+.banner>p {
+	color : #fff;
+	font-size : 30px;
+
+} 
+
+.ing {
+	text-align :right;
+	margin-right : 510px;
+	padding-top : 150px;
+	padding-bottom : 20px;
+	border-bottom : 1.2px solid #fff;
+}
+
+.ko{
+	text-align :right;
+	margin-right : 510px;
+	padding-top : 20px;
+}
+
+
+
+/* 갤러리이미지 */
+
+
+.photo {
+	 width : 1420px;
+	 position : relative;
+	 margin-top :200px;
+	 /* border : 1px solid red; */
+}
+
+
+.photo>h2 {
+	height : 30px;
+	width : 150px;
+	margin-bottom : 130px;
+	/* border-bottom: 1px solid #666; */
+	text-align : right;
+	padding-right : 30px;
+	font-size : 16px;
+	color : #445;	
+}
+
+
+.photo>ul>li {
+	/* border: 1px solid red; */
+	float : left;
+	padding : 5px 5px 5px 5px;
+}
+
+
+.small{
+	width : 720px;
+	height : 790px;
+	margin-left : -5px;
+	margin-top : -405px;
+}
+
+
+.small>ul>li {
+	float : left;
+	padding : 5px 5px 5px 5px;
+}
+
+
+
+.photo>ul>li:nth-child(6) {
+	margin-left : -20px;
+}
+
+
+.photo>ul>li:nth-child(7) {
+	margin-top : -60px;
+}
+
+.photo>ul>li:nth-child(9) {
+	margin-top : -345px;
+}
+
+.photo>ul>li:nth-child(10) {
+	margin-top : 5px;
+}
+
+
+
+.small2 {
+	margin-left : 700px;
+	width : 720px;
+	height : 790px;
+	margin-top : -455px;
+}
+
+.small2>ul>li {
+	float : left;
+	padding : 5px 5px 5px 5px;
+}
+
+.small2>ul>li:last-child {
+	margin-top : -400px;
+} 
+
+
+.photo:after {
+	content :"";
+	display : block;
+	clear : both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

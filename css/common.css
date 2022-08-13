@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/* 기본사항  */ 
+
+* {
+	margin : 0 auto;
+	font-family : '나눔고딕' , Nanum Gothic;
+	color : #0e0e0e;
+	font-size : 14px;
+	/* left : 0; */
+	/* top : 0; */
+}
+
+img {
+	vertical-align : top;
+}
+
+
+ul {
+	padding : 0;
+}
+
+ul>li {
+	list-style : none;
+}
+
+a {
+	text-decoration : none;
+}
+
+.hidden {
+	position : absolute;
+	left : -9999999px;
+	color : #fff;
+	font-size : 0;
+}
+
+.contents {
+	min-height : 900px;
+	width : 100%;
+	position : relative;
+	margin-bottom : 250px;
+	/* border:1px solid green; */
+	/* background-color:#123456; */
+}
+
+/* header시작 */
+
+.header_cover {
+	width : 100%;
+	height : 110px;
+	position : relative;
+	/* background-color : #faf6f2; */
+	/* background-color : #fafaf9; */
+	/* background-color : #fff; */
+}
+
+header {
+	width:1400px;
+	position:relative;
+}
+
+header>h1 {
+	/* border : 1px solid red; */
+	width : 200px;
+	padding-top : 30px;
+}
+
+.lmccover {
+	position : absolute;
+	/* border : 1px solid red; */
+	width : 400px;
+	/* left : 0; */
+	right : 0px;
+	top : 20px;	
+}
+
+.lmc>li {
+	width : 120px;
+	float : left;
+	text-align : center;
+}
+
+.lmc>li>a {
+	font-size : 0.95em;
+	color : #999;
+}
+
+
+.lmc>li:after {
+	content : "|";
+	color : #999;
+	padding-left :30px;
+}
+
+.lmc>li:last-child:after {
+	content : "";
+}
+
+.lmc>li>a:hover {
+	border-bottom : 1px solid #D8C5E0;
+	color : #D8C5E0;
+}
+
+.mainnavcover {	
+	width : 100%;
+	height : 40px;	
+	line-height : 40px;
+	/* border:1px solid red; */
+	position : relative;
+	/* z-index : 5; */
+	background-color : #fff;	
+	/* top : 14px; */
+	text-align : center;
+}
+
+.mainnavcover>ul {
+	width:750px;
+	height : 40px;	
+}
+
+.mainnavcover>ul:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.mainnavcover>ul>li {
+	float : left;
+	width : 150px;	
+}
+
+.mainnavcover>ul>li>a {
+	line-height : 30px;
+	font-weight : bold;
+	color : #555;
+}
+
+
+.mainnavcover>ul>li>a:hover {
+	color : #D8C5E0;
+	border-bottom : 1px solid #D8C5E0;
+}
+
+
+.subcover {
+	position : relative;
+	z-index : 30;
+	width : 750px;
+	height : 120px;
+	top :0px;
+	background-color : #fff;
+	opacity : 0.5;
+	display : none;
+	
+}
+
+.sub {
+	position : absolute;
+	z-index : 50;
+	display : none;
+}
+
+
+.sub>li {
+	line-height : 35px;
+	width : 150px;
+}
+
+.sub>li>a {
+	font-size : 0.95em;
+}
+
+.sub>li:first-child {
+	margin-top :20px;
+}
+
+.sub>li>a:hover {
+	color : #D8C5E0;
+}
+
+.add {
+	color : #D8C5E0 !important;
+}
+.add1 {
+	color : #D8C5E0 !important;
+}
+
+.slide_top {
+        height: 100px;
+        position: fixed;
+        right:  40px;
+        top: 90%;
+        z-index: 100;
+}
+
+.slide_top>a {
+    cursor: pointer;
+}
+
+.slide_top>a:hover{
+	/* opacity : 0.8; */
+}
+
+/* .slide_down { */
+        /* height: 100px; */
+        /* position: fixed; */
+        /* right:  40px; */
+        /* top: 92%; */
+        /* z-index: 100; */
+/* } */
+/* .slide_down>a { */
+    /* cursor: pointer; */
+/* } */
+
+
+
+
+
+/* footer 시작 */
+
+footer {
+	width : 100%;
+	height : 200px;
+	/* background-color :  #f9eff4; */
+	/* background-color : #faf6f2; */
+	border-top : 1px solid #999;
+}
+
+footer>h2 {
+	width : 180px;
+	/* border : 1px solid red; */
+}
+
+footer>h2>a>img{
+	display : inline-block;
+	width : 180px;
+	padding-top : 35px;
+	/* border : 1px solid red;	 */
+}
+
+
+address {
+	text-align : center;
+	font-style : normal;
+	line-height : 20px;
+	margin-top : 30px;
+	font-size : 0.95em;
+}
+
+
+
+
+
+
+
+
+
+

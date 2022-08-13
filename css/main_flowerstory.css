@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+.banner {
+	/* position : relative; */
+	width : 100%;
+	height : 400px;
+	background : url('../images/best/banner2.jpg') no-repeat;
+	background-size : cover;	
+}
+
+.banner>p {
+	position : relative;
+	/* width : 1200px; */
+	/* border : 1px solid red; */
+	top : 250px;
+	font-size : 30px;
+	border-bottom : 1.2px solid #000;
+	padding-left : 150px;
+	padding-bottom : 10px;
+	text-align :left;
+	margin-left : 275px;
+}
+
+
+/* age  */
+
+
+.age {
+	position : relative;
+}
+
+.age>h2 {
+	text-align : center;
+	margin-top : 200px;
+	margin-bottom : 30px;
+	letter-spacing : 10px;
+	font-size : 16px;
+	color : #445;
+	/* padding-bottom : 20px; */
+	/* padding-top : 20px; */
+	/* border-top : 1px solid #445; */
+	/* border-bottom : 1px solid #445; */
+	/* width : 250px; */
+}
+
+
+.age_01 {
+	position : relative;
+	width : 1400px;
+	/* border : 1px solid red; */
+	height : 630px;
+	margin-top : 150px;
+}
+
+
+.age_img2 {
+	position : absolute;
+	z-index : -1;
+	/* top  : 390px; */
+	top : 250px;
+	/* top : 90px; */
+	left : 430px;
+}
+
+.age_text {
+	position : absolute;
+	/* border : 1px solid red; */
+	width : 600px;
+	top : 250px;
+	left : 900px;
+}
+
+.age_text>li {
+	/* font-size : 18px; */
+	/* line-height : 40px; */
+	line-height : 60px;
+	color : #333;
+}
+
+.age_text>li:nth-child(1) {
+	color : #333;
+	font-size : 18px;
+	font-weight : bold;
+	
+}
+
+.age_text>li:nth-child(2) {
+	width : 40px;
+	border-bottom : 2px solid #666;
+	margin-left : 0px;
+}
+
+
+
+
+
+/* age 2 */
+
+
+.age_02 {
+	position : relative;
+	width : 1400px;
+	/* border : 1px solid red; */
+	height : 630px;
+	margin-top : 190px;
+	/* border-top : 1px solid #000; */
+	/* padding-top : 80px; */
+}
+
+.age_img3 {
+	float : right;
+}
+
+.age_text1 {
+	position : relative;
+	top : 90px;
+}
+
+.age_text1>li {
+	/* font-size : 16px; */
+	/* line-height : 40px; */
+	line-height : 60px;
+}
+
+
+.age_text1>li:nth-child(1) {
+	color : #333;
+	font-size : 18px;
+	font-weight : bold;
+	/* width : 500px; */
+}
+
+.age_text1>li:nth-child(2) {
+	width : 40px;
+	border-bottom : 2px solid #666;
+	margin-left : 0px;
+}
+
+
+
+
+.agecover>p {
+	position : relative;
+	width : 1400px;
+	top : 150px;
+	text-align : center;
+}
+
+.best_click {
+	position : relative;
+	text-align : center;
+	margin-top : 150px;
+}
+
+
+.best_click>a {
+	border : 1px solid #000;
+	color : #000;
+	padding : 20px 20px;
+	font-size : 18px;
+}
+
+.best_click>a:hover {
+	background-color : rgba(0,0,0,0.1);
+}
+
+
+
+/* message cover */ 
+
+.massege_cover {
+	/* border :1px solid red; */
+	/* background-color : #d9d9d9; */
+	background-color : #f3f3f3;
+	/* background-color : #868; */
+	width : 100%;
+	height : 1360px;
+	/* height : 530px; */
+	position : absolute;
+	z-index : -3;
+	top : 250px;
+	/* top : 1070px; */
+}
+
+
+
+
+
+/*meaning 전체  */
+
+
+.tip_banner {
+	position : relative;
+	width : 100%;
+	height : 200px;
+	/* background: url('../images/best/tip_banner1.jpg') no-repeat 0 0; */
+	background-attachment : fixed;
+	background-size : cover;	
+	margin-top : 200px;
+}
+
+
+.tip_cover>h2 {
+	text-align : center;
+	/* margin-top : -100px; */
+	margin-bottom : 200px;
+	letter-spacing : 10px;
+	font-size : 16px;
+	color : #445;
+	padding-bottom : 20px;
+	padding-top : 20px;
+	border-top : 1px solid #445;
+	border-bottom : 1px solid #445;
+	width : 250px;
+}
+
+
+.tip_banner>p {
+	position : relative;
+	text-align : center;
+	/* top : 110px; */
+	text-align : center;
+	letter-spacing : 10px;
+	font-size : 16px;
+	color : #445;
+	/* border  :1px solid red; */
+	/* padding-bottom : 20px; */
+	/* padding-top : 20px; */
+	/* width : 250px; */
+	font-weight : bold;
+	margin-top : 100px;
+	/* color : #fff; */
+	
+}
+
+.tip_cover {
+	position : relative;
+	/* margin-top : 200px; */
+}
+
+.tip {
+	float : left;
+}
+
+.tip_text {
+	position : relative;
+	z-index : 3;
+	width : 550px;
+	/* border : 1px solid red; */
+	/* top : 180px; */
+	/* left : 200px; */
+	top : 200px;
+	left : 500px;
+}
+
+
+.tip_text>li {
+	color : #ededed;	
+	line-height : 25px;
+}
+
+.tip_text>li:nth-child(1) {
+	width : 550px;
+	text-align : right;
+	color : #fff;
+	font-size : 20px;
+	padding-bottom : 15px;
+	margin-bottom : 20px;
+	border-bottom : 1px solid #fff;
+}
+
+
+.tip_text:after {
+	content:"";
+	display : block;
+	clear:both;
+}
+
+
+
+
+/* meaning 하단 */
+
+
+
+.meaning_cover {
+	position : relative;
+	width : 100%;
+	/* border : 1px solid red; */
+	/* margin-top : 250px; */
+}
+
+
+.meaning_img {
+	width : 100%;
+	height : 650px;
+	background : url('../images/best/meaning.jpg') no-repeat;
+	background-attachment : fixed;
+	background-size : cover;	
+	margin-top : -900px;
+
+}
+
+.meaning_img1 {
+	width : 100%;
+	height : 650px;
+	background : url('../images/best/meaning1.jpg') no-repeat;
+	background-attachment : fixed;
+	background-size : cover;	
+	/* margin-top : -150px; */
+}
+
+.meaning_text {
+	width : 600px;
+}
+
+.meaning_text>li {
+	position : relative;
+	z-index : 1;
+	/* border : 1px solid red; */
+	/* text-align : center; */
+	/* top : 100px; */
+	top : 370px;
+	line-height : 30px;
+	color : #444;
+	left : -150px;
+	/* text-align : center; */
+}
+
+
+.meaning_text>li:nth-child(1) {
+	font-size : 16px;
+	font-weight : bold;
+}
+
+
+
+.meaning_text>li:nth-child(1) {
+	/* border : 1px solid red; */
+	margin-bottom : 20px;
+	left : -50px;
+}
+
+.meaning_text>li>span {
+	font-size : 0.9em;
+	color : #444;
+}
+
+
+.meaning_click>a {
+	top :90px;
+	position : relative;
+	/* z-index : 1; */
+	/* border : 1px solid red; */
+	left : 1300px;
+	width : 110px;
+	border : 1px solid #000;
+	color : #000;
+	padding : 20px 20px;
+	font-size : 18px;
+}
+
+.meaning_click>a:hover {
+	background-color : rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+.banner {
+	/* position : relative; */
+	width : 100%;
+	height : 400px;
+	background : url('../images/shopping/banner.jpg') no-repeat;
+	background-size : cover;	
+}
+
+.banner>p {
+	position : relative;
+	/* width : 1200px; */
+	/* border : 1px solid red; */
+	top : 250px;
+	font-size : 30px;
+	border-bottom : 1.2px solid #000;
+	padding-left : 150px;
+	padding-bottom : 10px;
+	text-align :left;
+	margin-left : 275px;
+}
+
+
+/* 꽃포장 */
+
+
+.wrapping {
+	position : relative;
+	/* border : 1px solid red; */
+}
+
+
+.wrapping>h2 {
+	text-align : center;
+	margin-top : 200px;
+	margin-bottom : 150px;
+	letter-spacing : 10px;
+	font-size : 16px;
+	color : #445;
+}
+
+
+/* .wrapping>p { */
+	/* text-align : center; */
+	/* margin-bottom : 20px; */
+/* } */
+
+.move {
+	position : relative;
+	width : 800px;
+	height : 450px;
+}
+
+
+iframe {
+	position : absolute;
+	left : 0; 
+	top : 0;
+}
+
+
+
+.wrapping_bg {
+	/* border : 1px solid red; */
+	width : 800px;
+	margin-top : 30px;
+	height : 150px;
+	text-align : center;
+}
+
+
+
+.wrapping_text {
+	/* border : 1px solid red; */
+	line-height : 35px;
+}
+
+
+.wrapping_click {
+	margin-top : 70px;
+}
+
+
+.wrapping_click>a {
+	border : 1px solid #000;
+	color : #000;
+	padding : 20px 20px;
+	font-size : 18px;
+}
+
+.wrapping_click>a:hover {
+	background-color : rgba(0,0,0,0.1);
+}
+
+
+
+
+/* photo */
+
+
+.photo {
+	position : relative;
+	width : 1431px;
+}
+
+
+.photo>h2 {
+	text-align : center;
+	margin-top : 200px;
+	margin-bottom : 150px;
+	letter-spacing : 10px;
+	font-size : 16px;
+	color : #445;
+}
+
+
+.photo>ul {
+	height : 800px;
+}
+
+
+.photo>ul>li {
+	float : left;
+}
+
+
+.big3>a>img {
+	/* border: 1px solid red; */
+	margin-top : -100px;
+}
+
+
+.photo>ul>li>a>img {
+	/* transform : scale(1.0); */
+	padding : 5px 0px 5px 10px;	
+}
+
+.photo>ul>li>a>img:hover {
+	opacity : 0.8;
+}
+
+
+
+.photo_click{
+	margin-top : 130px;
+	text-align : center;
+} 
+
+
+.photo_click>a {
+	border : 1px solid #000;
+	color : #000;
+	padding : 20px 20px;
+	font-size : 18px;
+}
+
+.photo_click>a:hover {
+	background-color : rgba(0,0,0,0.1);
+}
+
+
+.photo:after {
+	content : "";
+	display : block;
+	clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

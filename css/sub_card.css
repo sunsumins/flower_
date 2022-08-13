@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* 배너 */
+
+.banner {
+	position : relative;
+	width : 100%;
+	height : 400px;
+	background : url('../images/card/banner1.jpg') no-repeat;
+	background-size : cover;
+}
+
+.banner>p {
+	color : #fff;
+	font-size : 30px;
+
+} 
+
+.ing {
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 150px;
+	padding-bottom : 20px;
+	border-bottom : 1.2px solid #fff;
+}
+
+.ko{
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 20px;
+}
+
+
+/* form_menu */
+
+/* #STATICMENU { */
+	/* position : relative; */
+	/* left : 0; */
+	/* top : 300px; */
+	/* z-index : 999; */
+	/* width : 300px; */
+	/* height : 300px; */
+	/* background : pink; */
+	/* margin : 0 auto; */
+	/* padding : 0 10px; */
+	/* box-sizing : border-box; */
+/* } */
+
+
+
+#STATICMENU {
+	margin: 0pt; 
+	padding: 0pt; 
+	position: absolute; 
+	left: 300px; 
+	top: 0px;
+	border : 1px solid #000;
+	width :150px;
+	height : 600px;
+	/* margin-top : 500px; */
+	text-align : center;
+	background-color : #fff;
+}
+
+#STATICMENU>li {
+	line-height : 50px;
+}
+
+
+#STATICMENU>li:first-child {
+	margin-top : 30px;
+}
+
+
+
+#STATICMENU>li>p>a:hover {
+	color : #868;
+	border-bottom : 1px solid #868;
+}
+
+
+
+.images_cover {
+	/* border : 1px solid #868; */
+	width : 900px;
+	margin-top : 50px;
+	/* background-color : #faf6f2; */
+}
+
+
+.all_images>li>ul>li {
+	line-height : 40px;
+	margin-left : 10px;
+	color : #555;
+}
+
+.all_images li:last-child {
+	margin-bottom : 50px;
+}
+
+
+
+/* .title {  */
+	/* border : 1px solid #868; */
+	/* display : inline-block; */
+	/* width : 900px; */
+	/* height : 40px; */
+	/* line-height : 40px; */
+	/* text-align : center; */
+	/* margin-bottom : 30px; */
+	/* margin-top : 30px; */
+	/* font-size : 17px; */
+	/* background-color : #D8C5E0; */
+	/* color : #fff; */
+/* } */
+
+
+
+
+.title {
+	display : inline-block;
+	text-align : center;
+	/* margin-top : -100px; */
+	margin-bottom : 50px;
+	letter-spacing : 5px;
+	font-size : 16px;
+	color : #445;
+	padding-bottom : 20px;
+	padding-top : 20px;
+	border-top : 1px solid #445;
+	border-bottom : 1px solid #445;
+	width : 250px;
+	margin-left :350px;
+	font-weight : bold;
+}
+
+
+
+
+
+
+
+
+

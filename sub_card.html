@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>꽃보라</title>
+		<meta charset="utf-8">
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/sub_card.css" rel="stylesheet">
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/common.js"></script>
+		
+		<script type="text/javascript">
+		 var stmnLEFT = 10; // 오른쪽 여백 
+		 var stmnGAP1 = 0; // 위쪽 여백 
+		 var stmnGAP2 = 0; // 스크롤시 브라우저 위쪽과 떨어지는 거리 
+		 var stmnBASE = 0; // 스크롤 시작위치 
+		 var stmnActivateSpeed = 45; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+		 var stmnScrollSpeed = 20; //스크롤 속도 (클수록 느림)
+		 var stmnTimer; 
+		 
+		 function RefreshStaticMenu() { 
+		  var stmnStartPoint, stmnEndPoint; 
+		  stmnStartPoint = parseInt(document.getElementById('STATICMENU').style.top, 10); 
+		  stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2; 
+		  if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1; 
+		  if (stmnStartPoint != stmnEndPoint) { 
+			stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 ); 
+			document.getElementById('STATICMENU').style.top = parseInt(document.getElementById('STATICMENU').style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + 'px'; 
+			stmnRefreshTimer = stmnScrollSpeed; 
+		   }
+			stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed); 
+		  } 
+		 function InitializeStaticMenu() {
+			document.getElementById('STATICMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치. left로 바꿔도.
+			document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE + 'px'; 
+			RefreshStaticMenu();
+		  }
+		</script>
+		
+	
+		
+		
+	</head>
+	<body onload="InitializeStaticMenu();">
+		<div class="header_cover">
+		<header id="slide">
+		
+			<h1><a href="index.html"><img src="images/common/logo6.png" alt="로고"></a></h1>
+			
+			<nav class="lmccover">
+				<ul class="lmc">
+					<li><a href="login.html">LOGIN</a></li>
+					<li><a href="mypage.html">MYPAGE</a></li>
+					<li><a href="cart.html">CART</a></li>
+				</ul>
+			</nav>
+		</header>
+		</div>
+	
+			<nav class="mainnavcover">
+				<ul class="menu">
+				
+					<li>
+						
+						<a href="main_flower.html" class="ad">FLOWER</a>
+						<ul class="sub">
+							<li><a href="sub_bouquet.html" class="BOUQUET">BOUQUET</a></li>
+							<li><a href="sub_silk.html" class="SILK">SILK</a></li>
+						</ul>
+						
+					</li>
+					
+					<li>
+						
+						<a href="main_specialday.html" class="ad">SPECIAL DAY</a>
+						<ul class="sub">
+							<li><a href="sub_basket.html" class="BASKET">BASKET</a></li>
+							<li><a href="sub_flowerbox.html" class="FLOWER_BOX">FLOWER BOX</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						
+						<a href="main_flowerstory.html" class="ad">FLOWER STORY</a>
+						<ul class="sub">
+							<li><a href="sub_card.html" class="GIFT_FLOWER">CARD MESSAGE</a></li>
+							<li><a href="sub_meaning.html" class="GUIDE">FLOWER MEANING</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						
+						<a href="main_shoppingstory.html" class="ad">SHOPPING STORY</a>
+						<ul class="sub">
+							<li><a href="sub_wrapping.html" class="NEW_PHOTO">FLOWER WRAPPING</a></li>
+							<li><a href="sub_photogallery.html" class="BEST_PHOTO">PHOTO GALLERY</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						
+						<a href="main_community.html" class="ad">COMMUNITY </a>
+						<ul class="sub">
+							<li><a href="sub_faq.html" class="NOTICE">FAQ</a></li>
+							<li><a href="sub_event.html" class="EVENT">EVENT</a></li>
+							<!-- <li><a href="sub_qa.html" class=" QA "> Q&A </a></li> -->
+						</ul>
+					</li>
+				</ul>
+				<div class="subcover"></div>
+
+				<div class="slide_top">
+					<a href="#slide"><img src="images/common/top1.png" alt="top_slide"></a>
+				</div>
+				
+				<!-- <div class="slide_down"> -->
+					<!-- <a href="#footer"><img src="images/common/down.jpg" alt="down_slide"></a> -->
+				<!-- </div>				 -->
+			</nav>
+			
+		
+		
+		<div class="contents">
+
+		
+			<section class="banner">
+			<h2 class="hidden">배너이미지</h2>
+			<p class="ing">card message</p>
+			<p class="ko">카드 메세지</p> 
+			</section>
+		
+		
+		
+			<form>
+			<div>
+				<ul id="STATICMENU">
+					<li>
+						<!-- <input class="hide" type="checkbox" name="all" value="all" id="all"> -->
+						<p title="love"><a href="#love">사랑의 메세지</a></p>
+					</li>
+					<li>
+						<!-- <input class="hide" type="checkbox" name="new" value="new" id="new"> -->
+						<p title="birthday"><a href="#birthday">생일 &sdot; 축하 </a></p>
+					</li>
+					<li>
+						<!-- <input class="hide" type="checkbox" name="best" value="best" id="best"> -->
+						<p title="marry"><a href="#marry">결혼 &sdot; 기념일</a></p>
+					</li>
+					<li>
+						<p title="company"><a href="#company">승진 &sdot; 영전(榮轉)</a></p>
+					</li>
+					<li>
+						<p title="company_01"><a href="#company_01">취임 &sdot; 퇴임</a></p>
+					</li>
+					<li>
+						<p title="company_02"><a href="#company_02">개업 &sdot; 창립</a></p>
+					</li>
+					<li>
+						<p title="home"><a href="#home">이사 &sdot; 축하</a></p>
+					</li>
+					<li>
+						<p title="meeting"><a href="#meeting">전시 &sdot; 모임축하</a></p>
+					</li>
+					<li>
+						<p title="victory"><a href="#victory">수상 &sdot; 우승</a></p>
+					</li>
+					<li>
+						<p title="election"><a href="#election">선거 &sdot; 당선</a></p>
+					</li>
+					<li>
+						<p title="funeral"><a href="#funeral">장례</a></p>
+					</li>
+				
+				</ul>
+			</div>
+			
+			<div class="images_cover">
+				<ul class="all_images">	
+					<li title="love" id="love"> <span class="title">사랑의 메세지</span>
+						<ul>
+							<li>- I love you forever. </li>
+							<li>- 꽃보다 아름답고 향기로운 당신을 사랑합니다.</li>
+							<li>- 아무리 좋은 무지개 꽃이라도 당신만 하겠소. 사랑의 꽃이 시들지 않도록 당신만을 사랑하리다.</li>
+							<li>- 내 삶을 가득 채워주고 늘 내게 새로운 힘이 되어주는 당신!</li>
+							<li>- 맑은 사랑, 맑은 웃음, 더욱더 많은 행복이 항상 당신과 함께 하길 바랍니다.</li>
+							<li>- 꽃은 향기롭고 그대는 아름답다.</li>
+							<li>- 제대로 챙겨주지 못해 미안해♡</li>
+							<li>- 함께하지 못해 미안해♡</li>
+							<li>- 같이 있어주지 못해 미안하고 사랑해♡</li>
+							<li>- 당신으로 가득 찬 내 마음을 어떻게 표현하면 좋을지 모르겠어요.</li>
+							<li>- 나의 작은 정성이 그대 아름다운 얼굴에 한 순간만이라도 미소 짓게 할 수 있다면</li>
+							<li>- 우리가 함께 하는 그날을 그리며 멀리서나마 축하의 마음을 전합니다.</li>
+							<li>- 지금은 멀리서 고백하지만 조만간 네 곁에서 사랑한다 말하리라. </li>
+							<li>- 무한한 시간, 무한한 우주... 그 속에서 함께할 수 있는 우리의 만남을 감사드립니다. </li>
+							<li>- 말하지 않고도 느껴지는 진실된 사랑으로, 당신 곁에서 포근한 보금자리가 되도록 노력하리라! </li>
+							<li>- 제가 선물한 이 꽃을 보면서 기뻐하는 당신의 얼굴을 영원히 머릿속에 기억하겠습니다. </li>
+							<li>- 우리의 만남이 100일을 넘었습니다. 저의 조그만 정성을 보냅니다. </li>
+							<li>- 함께 있어준 1000일! 언제까지나 내 옆에서 행복한 꿈꾸기를 진심으로 바랄게. </li>
+						</ul>					
+					</li>
+					
+					
+					<li title="birthday" id="birthday"> <span class="title">생일 &sdot; 축하 </span>
+						<ul>
+							<li>- 생일을 진심으로 축하하고 여기 작은 정성을 몇 배나 더 큰 기쁨으로 전합니다. </li>
+							<li>- 당신의 생일을 진심으로 축하하며 사랑하는 내 마음을 이 꽃에 담아 보냅니다.</li>
+							<li>- 맑은 햇살에 상큼한 오늘! 생일을 축하하는 마음으로 이 꽃을 보내드립니다.</li>
+							<li>- 나를 위해 태어난 당신의 날을 축하합니다. 사랑해요.</li>
+							<li>- 생일을 진심으로 축하하며 늘 건강하고 영원한 나의 친구가 되어 주세요.</li>
+							<li>- 소중한 당신의 생일을 축하하며 언제나 당신을 사랑하는 그 마음 변치 않을게요.</li>
+							<li>- 나의 사랑! 나의 연인! 당신의 생일을 진심으로 축하하오.</li>
+							<li>- 오늘 당신의 생일을 맞아 진심으로 축하하며 앞으로도 변함없는 사랑을 보내오.</li>
+							<li>- 꽃바구니 속의 향기보다 더 아름다운 당신의 생일을 진심으로 축하드립니다.</li>
+							<li>- 뜻깊은 생신을 맞이하여 축하와 감사의 마음을 전하며 가정의 건강과 행복을 기원합니다.</li>
+							<li>- 당신이 태어난 오늘 태양은 더욱 힘차게 솟아올랐습니다.</li>
+							<li>- 여기 장미꽃 한 다발과 화이트 와인을 드리니 눈부신 시간이 당신 가슴에 남았으면 합니다.</li>
+							<li>- 생일 축하해요. 늘 건강하고 즐겁게 사세요.</li>
+							<li>- 생일 축하해. 언제나 밝고 행복하길 바랄께.</li>
+							<li>- 오늘은 기쁜 날, 소중한 내 친구! 생일 정말 축하해.</li>
+							<li>- 너의 생일을 함께하지 못해 아쉽지만 마음은 항상 너의 곁에 있어.</li>
+							<li>- 생일을 축하하며 장미가 유난히 잘 어울리는 당신에게 나의 사랑을 전합니다.</li>
+							<li>- 생신을 진심으로 축하하오며 건강과 행운을 기원합니다.</li>
+							<li>- 생신의 기쁨을 함께하지 못하여 죄송하오며 멀리서나마 축하의 마음을 전합니다.</li>
+							<li>- 생일을 축하하며 가정의 건강과 행복을 기원합니다.</li>
+							<li>- 변함없이 사랑하는 당신의 생일을 함께 기뻐합니다.</li>
+							
+							
+						</ul>					
+					</li>
+					
+					<li title="marry" id="marry"> <span class="title">결혼 &sdot; 기념일</span>
+						<ul>
+							<li>- 늘 애인 같은 당신의 생일을 축하하며 항상 내 옆에서 힘이 되어준 당신께 감사합니다. </li>
+							<li>- 결혼기념일을 축하하며 두 분의 앞날에 사랑과 행복이 가득하기를 기원합니다. </li>
+							<li>- 결혼기념일을 진심으로 축하하며 더욱 행복한 가정 이루시기를 기원합니다. </li>
+							<li>- 당신에 대한 변함없는 사랑으로 오늘의 결혼기념일을 축하합니다. </li>
+							<li>- 엄마, 아빠 결혼기념일을 진심으로 축하합니다. 더욱더 행복하세요. </li>
+							<li>- 오늘은 우리의 결혼기념일, 언제까지나 당신을 아끼고 사랑하겠습니다. </li>
+							<li>- 오늘은 우리의 결혼기념일, 서로 더 사랑하고 아끼는 부부 됩시다. </li>
+							<li>- 우리의 결혼기념일을 축하하며 당신에게 변함없는 사랑을 드립니다. </li>
+							<li>- 당신과 나의 결혼기념일을 축하하며 우리 가정의 행복을 위해 함께 노력합시다.</li>
+							<li>- 여보 행복해요. 기쁜 오늘을 축하해요.</li>
+							<li>- 뜻깊은 금혼식을 진심으로 축하하오며 두 분의 깊은 사랑에 경의를 표합니다.</li>
+							<li>- 우리가 결혼의 서약을 맺은 지 벌써 7년이 되었군요. 나의 작은 마음을 당신께 바칩니다.</li>
+							<li>- 결혼기념일을 축하합니다. 앞으로도 서로를 아끼고 사랑하는 부부가 되기를 바랍니다.</li>							
+						</ul>					
+					</li>
+					
+					<li title="company" id="company"> <span class="title">승진 &sdot; 영전(榮轉)</span>
+						<ul>
+							<li>- 승진을 축하하며 더 큰 영광 있기를 기원합니다. </li>
+							<li>- 승진을 축하하며 앞으로도 모든 일 뜻대로 되기를 기원합니다. </li>					
+							<li>- 영예로운 승진을 축하하며 무궁한 발전을 기원합니다. </li>					
+							<li>- 승진을 계기로 더욱 힘차게 전진하시기를 기원합니다. </li>					
+							<li>- 승진(영전)을 축하하며 더 큰 영광과 무궁한 발전을 기원합니다. </li>					
+							<li>- 항상 많은 발전이 있기를 빕니다 </li>					
+							<li>- 진급을 축하하며 힘찬 전진을 기대한다. </li>					
+							<li>- 진급을 축하하오며 더 큰 영광 있기를 기원합니다. </li>					
+							<li>- 영예로운 진급을 축하하며 무궁한 발전을 기원합니다. </li>					
+							<li>- 영전을 축하하며 성공과 건투를 기원합니다. </li>					
+							<li>- 영전을 축하하며 높으신 뜻 새로이 펼치시기 바랍니다. </li>					
+							<li>- 영전을 충심으로 축하하며 앞날의 발전과 행운을 기원합니다.</li>					
+							<li>- 영전을 충심으로 축하하며 뜻한바 모두 이루시기 바랍니다.</li>					
+							<li>- 영전의 기쁨을 함께 하며 앞날의 발전과 행운 기원합니다.</li>					
+							<li>- 창의와 노력으로 이루신 영전의 기쁨을 충심으로 축하합니다.</li>					
+							<li>- 영전을 축하하며 앞날의 발전과 행운을 빈다.</li>					
+						</ul>					
+					</li>
+					
+					<li title="company_01" id="company_01"> <span class="title">취임 &sdot; 퇴임</span>
+						<ul>
+							<li>- 취임을 축하하오며 앞날의 더 큰 영광을 기원합니다. </li>				
+							<li>- 취임을 축하하며 원대한 포부 펼치시기 바랍니다. </li>				
+							<li>- 취임을 진심으로 축하하오며 뜻한바 모두 이루시기 바랍니다. </li>				
+							<li>- 취임을 경하하며 성공과 건투를 바랍니다. </li>				
+							<li>- 오늘의 뜻깊은 취임이 더 큰 영광과 기쁨으로 이어지기 바랍니다. </li>				
+							<li>- 취직을 축하하며 원대한 포부 펼치기 바랍니다. </li>				
+							<li>- 취직을 진심으로 축하하며 뜻한바 모두 이루시기 바랍니다. </li>				
+							<li>- 취직을 축하하며 모든 일 뜻대로 되기 바란다. </li>				
+							<li>- 취직을 축하하며 더욱 매진하여 큰 꿈 이루기 바란다. </li>				
+							<li>- 명예로운 정년퇴임하심을 축하합니다. </li>				
+							<li>- 그간의 업적을 기리며 앞날의 행운을 기원합니다. </li>				
+							<li>- 퇴임을 맞아 앞으로 더욱 건강하시기를 기원합니다. </li>				
+							<li>- 무사히 정년퇴임하심을 축하하오며 앞으로 더욱 건강하시기를 기원합니다.</li>				
+							<li>- 영예로운 퇴임이 새 인생의 출발점이 되시기를 기원합니다.</li>				
+							<li>- 영예로운 정년퇴임이 새 인생의 출발점이 되시기를 기원합니다.</li>				
+							<li>- 그간 노고를 치하하며 앞날의 행운과 건강을 기원합니다.</li>				
+							<li>- 그간의 빛나는 업적은 우리의 자랑으로 길이 기억될 것입니다.</li>				
+							<li>- 많은 노고에 깊이 감사드립니다.</li>				
+						</ul>					
+					</li>
+					
+					<li title="company_02" id="company_02"> <span class="title">개업 &sdot; 창립</span>
+						<ul>
+							<li>- 개업을 축하하며 뜻한 일 모두 성취히시기 바랍니다. </li>						
+							<li>- 오늘의 뜻깊은 개업이 무궁한 발전과 번영의 초석이 되기를 기원합니다. </li>						
+							<li>- 개원을 축하하며 앞날의 번영을 기원합니다. </li>						
+							<li>- 개원을 축하하며 건투와 발전을 기원합니다. </li>						
+							<li>- 개원을 축하하며 무궁한 번영있기를 기원합니다. </li>						
+							<li>- 개원을 축하하며 뜻한 일 모두 성취하시기 바랍니다. </li>						
+							<li>- 오늘의 뜻깊은 개원이 무궁한 발전과 번영의 초석이 되기를 기원합니다. </li>						
+							<li>- 개원 기념일을 진심으로 축하합니다. </li>						
+							<li>- 개교을 축하하며 앞날의 번영을 축하합니다. </li>						
+							<li>- 개교을 축하하며 건투와 발전을 기원합니다. </li>						
+							<li>- 개교을 축하하며 무궁한 번영있기를 기원합니다. </li>						
+							<li>- 개교을 축하하며 뜻한 일 모두 성취하시기 바랍니다. </li>						
+							<li>- 오늘의 뜻깊은 개교가 무궁한 발전과 번영의 초석이 되기를 기원합니다. </li>						
+							<li>- 개교 기념일을 진심으로 축하합니다. </li>						
+							<li>- 사업의 번창을 진심으로 기원합니다. </li>						
+							<li>- 하나님의 축복이 사업장 위에 넘치게 되기를 기원합니다. </li>						
+							<li>- 부처님의 자비가 성공의 길로 이끌어 주시리라 믿습니다. </li>						
+							<li>- 창립을 축하하며 건투와 발전을 빕니다. </li>						
+							<li>- 창립을 축하하며 앞날의 번영을 기원합니다. </li>						
+							<li>- 창립을 축하하며 무궁한 번영있기를 기원합니다.</li>						
+							<li>- 창립을 축하하며 뜻한 일 모두 성취하시기 바랍니다.</li>						
+							<li>- 오늘의 뜻깊은 창립이 무궁한 발전과 번영의 초석이 되기를 기원합니다.</li>						
+							<li>- 창립 기념일을 진심으로 축하합니다.</li>						
+							<li>- 뜻깊은 창립 기념일을 축하하며 그간의 눈부신 업적을 기립니다.</li>						
+							<li>- 창립 기념일을 축하하며 앞으로 더욱 발전하시기를 기원합니다.</li>						
+							<li>- 뜻깊은 창립 기념일을 맞아 앞날에 큰 번영을 기원합니다.</li>						
+						</ul>					
+					</li>
+					
+					<li title="home" id="home"> <span class="title">이사 &sdot; 축하</span>
+						<ul>
+							<li>- 새 보금자리로 입주하심을 축하합니다. </li>						
+							<li>- 새집 마련을 축하합니다. 행복한 가정을 이루세요. </li>						
+							<li>- 그간의 노력에 경의를 표하며 새집 마련의 기쁨을 함께합니다. </li>						
+							<li>- 새집 마련을 축하하며 새로운 마음으로 힘차게 나아가기를 기원합니다. </li>						
+							<li>- 새집을 마련한 오늘의 기쁨이 더 큰 행복으로 이어지기 바랍니다. </li>						
+							<li>- 새 보금자리로 입주하심을 축하하며 가정의 건강과 행복을 기원합니다. </li>						
+							<li>- 너의 보금자리 마련을 축하하며 화목한 가정 이루기 바란다. </li>						
+							<li>- 새 사옥으로의 이전을 축하하며 더 큰 발전 있기를 기원합니다. </li>						
+							<li>- 뜻깊은 기공을 축하하며 앞날의 눈부신 번영을 기원합니다. </li>						
+							<li>- 뜻깊은 증축을 축하하며 앞날의 눈부신 번영을 기원합니다. </li>						
+							<li>- 오늘의 뜻깊은 증축이 성공으로 비상하는 날개가 되기 바랍니다 </li>						
+						</ul>					
+					</li>
+					
+					<li title="meeting" id="meeting"> <span class="title">전시 &sdot; 모임축하</span>
+						<ul>
+							<li>- 발표회/전시회를 축하하며 끊임없이 발전하기를 기원합니다. </li>						
+							<li>- 발표회/전시회를 축하하며 많은 호평 받으시기를 기원합니다. </li>						
+							<li>- 이번 발표회/전시회에 기울인 노력만큼 보람과 기쁨이 함께하기를 기원합니다. </li>						
+							<li>- 직접 보지 못해 아쉽게 생각하며 성공적인 발표회/전시회가 되기를 바랍니다. </li>						
+							<li>- 공연을 진심으로 축하합니다. </li>						
+							<li>- 공연을 축하하며 앞날의 영광을 기원합니다. </li>						
+							<li>- 공연을 축하하며 끊임없이 발전하기를 기원합니다. </li>						
+							<li>- 공연 개최를 축하하며 많은 호평 받으시기를 기원합니다. </li>						
+							<li>- 이번 공연에 기울인 노력만큼 보람과 기쁨이 함께하기를 기원합니다. </li>						
+							<li>- 직접 보지 못해 아쉽게 생각하며 성공적인 공연이 되기 바랍니다. </li>						
+							<li>- 뜻깊은 대회를 진심으로 축하합니다. </li>						
+							<li>- 뜻깊은 대회에 성원을 보내며 바라시는 일 모두 이루시기 바랍니다. </li>						
+							<li>- 뜻깊은 대회에 참석하지 못함을 사과드리며 멀리서나마 뜨거운 성원을 보냅니다. </li>						
+							<li>- 성스러운 식전을 경축하며 무궁한 발전을 기원합니다. </li>						
+							<li>- 뜻깊은 모임에 성원을 보내며 바라시는 일 이루시기 바랍니다. </li>						
+							<li>- 영광이 가득한 오늘의 큰 잔치에 아낌없는 성원을 보냅니다 </li>						
+						</ul>					
+					</li>
+					
+					<li title="victory" id="victory"> <span class="title">수상 &sdot; 우승</span>
+						<ul>
+							<li>- 명예로운 입상을 진심으로 축하합니다. </li>						
+							<li>- 입상을 축하하며 더욱 정진하시기 바랍니다. </li>						
+							<li>- 각고의 노력으로 이룬 입상의 영광을 함께 기뻐합니다. </li>						
+							<li>- 이번 입상이 더 큰 영광으로 나아가는 발판이 되기 바랍니다. </li>						
+							<li>- 입상을 진심으로 축하한다. </li>						
+							<li>- 영예로운 입상 정말 정말 자랑스럽다. </li>						
+							<li>- 입상했다니 정말 기쁘구나. 계속 정진하여 더 큰 영광 있기를 바란다. </li>						
+							<li>- 수상의 영예를 진심으로 축하하며 앞날의 발전을 기원합니다. </li>						
+							<li>- 각고의 노력으로 이룬 수상의 영광을 함께 기뻐합니다. </li>						
+							<li>- 이번 수상이 더 큰 영광으로 나아가는 발판이 되기 바랍니다. </li>						
+							<li>- 기쁘구나! 앞으로 오늘의 영광이 더욱 빛나리라 믿는다. </li>						
+							<li>- 영광스런 메달 획득을 축하하며 그간의 노고를 깊이 치하합니다. </li>						
+							<li>- 굳은 의지와 노력으로 이룬 오늘의 영광을 우리 모두 기뻐합니다. </li>						
+							<li>- 그간의 노력을 격려하며 더욱 분발하여 좋은 결실 맺기를 기원합니다. </li>						
+							<li>- 최후의 순간까지 최선을 다하는 투혼으로 드높은 기상 떨치기 바랍니다. </li>						
+							<li>- 필승의 신념으로 우리나라의 명예를 빛내주시기 바랍니다 </li>						
+						</ul>					
+					</li>
+					
+					<li title="election" id="election"> <span class="title">선거 &sdot; 당선</span>
+						<ul>
+							<li>- 입후보하심을/공천받으심을 축하하며 당선 소식 기다리겠습니다. </li>						
+							<li>- 입후보하심을/공천받으심을 축하합니다. 당선의 영광 누리시기 바랍니다 </li>						
+							<li>- 멀리서 성원의 뜻을 전하며 당선의 영광이 함께할 것 이라 믿습니다.</li>						
+							<li>- 영광스런 당선을 진심으로 축하드립니다.</li>						
+							<li>- 영예로운 당선을 축하하며 건투를 빕니다.</li>						
+							<li>- 선생님의 당선은 우리 지역의 자랑과 기쁨입니다.</li>						
+							<li>- 지역사회의 발전을 기원하며 선생님의 영예로운 당선을 진심으로 축하합니다.</li>						
+							<li>- 영광스런 당선을 축하합니다. 국가와 사회를 위해 큰 뜻 펼치십시오.</li>						
+							<li>- 지역사회의 일꾼으로 당선되심을 축하하며 앞날의 발전과 행운을 기원합니다.</li>						
+							<li>- 영예로운 당선을 축하하며 지역 사회 발전을 위하여 더 많은 노력 있으시기 바랍니다.</li>						
+						</ul>					
+					</li>
+					
+					<li title="funeral" id="funeral"> <span class="title">장례</span>
+						<ul>
+							<li>- 삼가 故人의 冥福을 빕니다 </li>						
+							<li>- 弔悼 (조도), 追慕 (추모), 追悼 (추도), 慰靈 (위령), 哀棹 (애도) </li>						
+							<li>- 追慕 (추모), 昇華 (승화), 四十九日齊 (49일제), 百日脫喪 (백일탈상) </li>						
+							<li>- 甲祀 (갑사), 極樂往生 (극락왕생) </li>						
+						</ul>					
+					</li>
+				
+				</ul>
+			</div>
+			
+			
+		
+			
+			
+			</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		</div>
+		
+		
+		
+		
+		
+		
+		
+
+
+		<footer id="footer">
+		
+			<h2><a href="index.html"><img src="images/common/logogray4.png"></a></h2>
+						
+		<address>
+			사업자등록번호:012-35-98765 &nbsp;&nbsp;&nbsp;&nbsp;꽃보라(주)대표자:최수민 &nbsp;&nbsp;&nbsp;&nbsp;경기도광주시목현동한옥마을11<br>
+			TEL:031-333-3030&nbsp;&nbsp; &nbsp;&nbsp;개인정보관리책임자:최수민<br>
+			Copyright&copy; 2020 꽃보라 All rights reserved.
+		</address>
+		
+		</footer>
+		
+		
+		
+			
+		
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

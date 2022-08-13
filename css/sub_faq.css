@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+
+/* 배너 */
+
+.banner {
+	position : relative;
+	width : 100%;
+	height : 400px;
+	background : url('../images/faq/banner.jpg') no-repeat;
+	background-size : cover;	
+}
+
+.banner>p {
+	color : #fff;
+	font-size : 30px;
+
+} 
+
+.ing {
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 150px;
+	padding-bottom : 20px;
+	border-bottom : 1.2px solid #fff;
+}
+
+.ko{
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 20px;
+}
+
+
+
+.faq {
+	position : relative;
+	width : 1400px;
+	margin-top : 200px;
+}
+
+
+.faq>h2 {
+	height : 30px;
+	width : 300px;
+	margin-bottom : 130px;
+	/* border-bottom: 1px solid #666; */
+	text-align : center;
+	font-size : 16px;
+	color : #445;
+}
+
+
+.faq_text {
+	width : 1200px;
+	height : 30px;
+	margin-bottom : 30px;
+	border-bottom: 2px solid #666;
+}
+
+.faq_text li {
+	float : left;
+	color : #555;
+	font-weight : bold;
+	margin-left : 60px;
+}
+
+
+/* .faq_text li:nth-child(1) { */
+	/* margin-right : 540px; */
+/* } */
+
+.faq_text li:nth-child(2) {
+	margin : 0px 430px 0px 500px;
+}
+
+
+
+
+.faq_cover {
+	width : 1200px;
+	/* border : 1px solid red; */
+	line-height : 23px;
+}
+
+
+.faq_cover>h3 {
+	/* border : 1px solid #333; */
+	border-bottom : 1px solid #777;
+	height : 50px;
+	line-height : 50px;
+	padding-left : 60px;
+	/* text-align : center; */
+	color : #333;
+}
+
+.faq_cover>h3:hover {
+	cursor : pointer;
+}
+
+
+.faq_cover>h3:nth-child(1), .message {
+	border-top : 1px solid #777;
+}
+
+.number {
+	/* border : 1px solid red; */
+	left : 0;
+	display : inline-block;
+	line-height : 50px;
+	font-size : 14px;
+	color : #1e3872;
+	/* font-weight : normal; */
+}
+
+.or {
+	/* display : none; */
+	position : absolute;
+	right : 0;
+	margin-right : 150px;
+	display : inline-block;
+	line-height : 50px;
+	color : #666;
+	font-size : 16px;
+	/* border : 1px solid red; */
+}
+
+
+
+.answer {
+	position : relative;
+	border-bottom : 1.5px solid #777;
+	border-top : 0;
+	/* height : 200px; */
+	padding-bottom : 50px;
+	line-height : 25px;
+	padding-left : 60px;
+	padding-top : 40px;
+	box-sizing : border-box;
+}
+
+.a {
+	color : #c11b1b;
+	font-weight : bold;
+}
+
+
+.red {
+	color : red;
+	font-size : 0.9em;
+	margin-top : 10px;
+}
+
+
+/* 버튼 */
+
+
+
+.bottom_number {
+	width : 1400px;
+	text-align : center;
+	margin-top : 70px;
+}
+
+.bottom_number>p {
+	display : inline-block;
+	/* margin-right : 15px;	 */
+	width  : 40px;
+	/* font-weight : bold; */
+	color : #999;
+}
+
+.bottom_number>p:hover {
+	color : #868;
+	cursor : pointer;
+	font-weight : bold;
+} 
+
+.number_hover {
+	font-weight : bold !important; 
+	color : #868 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

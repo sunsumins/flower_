@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* 배너 */
+
+.banner {
+	position : relative;
+	width : 100%;
+	height : 400px;
+	background : url('../images/silk/banner.jpg') no-repeat;
+	background-size : cover;	
+}
+
+.banner>p {
+	color : #fff;
+	font-size : 30px;
+
+} 
+
+.ing {
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 150px;
+	padding-bottom : 20px;
+	border-bottom : 1.2px solid #fff;
+}
+
+.ko{
+	text-align :right;
+	margin-right : 500px;
+	padding-top : 20px;
+}
+
+
+
+
+ /* 메뉴 */
+ 
+ 
+.form_menu {
+	 width : 1400px;
+	 position : relative;
+	 margin-top : 150px;
+ }
+ 
+ .form_menu>ul {
+	height : 30px;
+	border-bottom: 1px solid #666;
+	text-align : right;
+	padding-right : 30px;
+ }
+ 
+ .form_menu>ul>li {
+	display : inline;
+	padding-left : 50px;
+	/* padding-right : 50px; */
+ }
+ 
+ 
+/* .hide { */
+	/* display : none; */
+/* } */
+.form_menu>ul>li>p {
+	display:inline;
+}
+
+
+.form_menu>ul>li>p:hover {
+	color : #888;
+	cursor : pointer;
+}
+
+.form_menu>ul:after {
+	content : "";
+	display : block;
+	clear : both;
+}
+
+
+
+
+/* 상품이미지 */
+
+.images_cover {
+	width : 1400px;
+	position : relative;
+	margin-top : 50px;
+}
+
+.all_images>li {
+	width : 460px;
+	float : left;
+	padding-right : 10px;
+	padding-bottom : 120px;
+}
+
+.all_images>li img:hover {
+	opacity : 0.8;
+}
+
+.all_images>li:nth-child(3n) {
+	padding-right : 0;
+}
+
+
+
+
+/* 상품명,가격 */
+
+.all_images>li span {
+	display : inline-block;
+	width : 360px;
+	position : absolute;
+	/* border : 1px solid red; */
+	margin-top : 40px;
+	text-align : center;
+	margin-left : 50px;
+}
+
+.all_images>li>a span {
+	font-size : 16px;
+	border-bottom : 1px solid #868;
+	padding-bottom : 10px;
+}
+
+.all_images>li>a span:hover {
+	color : #868;
+}
+
+.number {
+	/* border-top : 1px solid #868; */
+	padding-top : 20px;
+	color : #868;
+}
+
+
+
+
+.images_cover:after {
+	content : "";
+	display : block;
+	clear : both;
+} 
+
+
+/* 버튼 */
+
+
+
+.bottom_number {
+	width : 1400px;
+	text-align : center;
+	margin-top : 70px;
+}
+
+.bottom_number>p {
+	display : inline-block;
+	/* margin-right : 15px;	 */
+	width  : 40px;
+	/* font-weight : bold; */
+	color : #999;
+}
+
+.bottom_number>p:hover {
+	color : #868;
+	cursor : pointer;
+	font-weight : bold;
+} 
+
+.number_hover {
+	font-weight : bold !important; 
+	color : #868 !important;
+}
+
+/* .plus { */
+	/* text-align : center; */
+	/* margin-top : 50px; */
+/* } */
+
+/* .plus>button { */
+	/* padding : 8px 25px; */
+	/* border : 1px solid #898; */
+	/* background-color : #fff; */
+	/* color : #898; */
+/* } */
+
+/* .plus>button:hover { */
+	/* cursor : pointer; */
+	/* background-color :  rgba(0,0,0,0.1); */
+/* } */
+
+
+
+
+
+
+
+
